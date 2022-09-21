@@ -7,7 +7,7 @@
     </van-nav-bar>
 
     <van-tabs v-model:active="activeName">
-      <div v-for="(item, index) in headerInfos">
+      <div v-for="(item, index) in headerInfos" class="first">
         <van-tab :title="item" :name="index">
           <One :order="orderInfos.orders" />
         </van-tab>
@@ -37,4 +37,10 @@ watch(activeName, (newvalue) => {
 onMounted({})
 </script>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+// .order {
+//   .first {
+//     padding-bottom: 20px;
+//   }
+// }
+</style>
