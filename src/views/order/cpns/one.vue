@@ -51,7 +51,7 @@
         </div>
       </div>
 
-      <div class="bottom" v-show="item.orderStatus === 5">
+      <div class="bottom1" v-show="item.orderStatus === 5">
         <div class="end">
           <span>删除</span>
           <span>再次预定</span>
@@ -130,6 +130,21 @@ const props = defineProps({
     .bottom {
       display: flex;
       justify-content: space-between;
+      // justify-content: flex-end;
+      align-items: center;
+      .end {
+        display: flex;
+        justify-content: flex-end;
+        width: 130px;
+        span {
+          padding: 5px;
+        }
+      }
+    }
+
+    .bottom1 {
+      display: flex;
+      justify-content: flex-end;
       // justify-content: flex-end;
       align-items: center;
       .end {
