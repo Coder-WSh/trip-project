@@ -1,10 +1,10 @@
 <template>
   <div class="favor">
-    <!-- 4.6分推荐 然后点赞啥的没写 -->
-    <template v-for="(value, index, key) in favorGrounp.items">
+    <template v-for="(value, index, key) in historyInfos.items">
       <div class="goods">
         <div class="top">
           <img :src="value.pictureList[0]" alt="" />
+
           <div class="text">
             <span>{{ value.commentBrief.overall }}</span>
             <span>{{ value.commentBrief.scoreTitle }}</span>
@@ -12,10 +12,10 @@
           <div class="right">
             <span class="pic">
               <img :src="value.logoUrl" alt="" />
-              <van-icon name="like" color="red" size="45" class="pad" />
+              <van-icon name="like" color="red" size="30" class="pad" />
 
               <div class="comment">
-                <van-icon name="comment-o" color="#fff" size="45" class="pad" />
+                <van-icon name="comment-o" color="#fff" size="30" class="pad" />
                 <h2>{{ value.commentBriefForCD.totalCount }}</h2>
               </div>
             </span>
@@ -63,8 +63,8 @@ import { storeToRefs } from "pinia"
 import useFavorStore from "../../../stores/moudle/favor"
 
 const favorStore = useFavorStore()
-const { favorGrounp } = storeToRefs(favorStore)
-favorStore.getInfos()
+const { historyInfos } = storeToRefs(favorStore)
+favorStore.getInfosHistory()
 </script>
 
 <style lang="less" scoped>
@@ -101,7 +101,8 @@ favorStore.getInfos()
           right: 5px;
           top: 25%;
           img {
-            width: 80%;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
             padding-bottom: 10px;
           }
