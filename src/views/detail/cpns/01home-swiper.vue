@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <van-swipe autoplay="3000" indicator-color="white">
+    <van-swipe :autoplay="3000" indicator-color="white">
       <!-- 轮播图 -->
       <template v-for="(item, index) in mainPart" :key="index">
         <van-swipe-item>
@@ -23,6 +23,7 @@
           </template>
         </div>
       </template>
+      
     </van-swipe>
   </div>
 </template>

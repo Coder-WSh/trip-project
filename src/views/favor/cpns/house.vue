@@ -12,11 +12,11 @@
           <div class="right">
             <span class="pic">
               <img :src="value.logoUrl" alt="" />
-              <van-icon name="like" color="red" size="30" class="pad" />
+              <van-icon name="like" color="red" size="45" class="pad" />
 
               <div class="comment">
-                <van-icon name="comment-o" color="#fff" size="30" class="pad" />
-                <h2>{{ value.commentBriefForCD.totalCount }}</h2>
+                <van-icon name="comment-o" color="#fff" size="45" class="pad" />
+                <h4>{{ value.commentBriefForCD.totalCount }}</h4>
               </div>
             </span>
           </div>

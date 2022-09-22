@@ -20,7 +20,7 @@
 import { storeToRefs } from "pinia"
 import { watch, onMounted, ref } from "vue"
 import useOrederStore from "../../stores/moudle/order"
-import One from "./cpns/one.vue"
+import One from "./cpns/index.vue"
 
 const headerInfos = ["全部订单", "近期订单", "未支付"]
 const setInfos = ["all", "recent", "pend"]

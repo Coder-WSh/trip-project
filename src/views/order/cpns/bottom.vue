@@ -32,7 +32,7 @@ const timeID = ref(null)
 let count = 1
 // console.log(props.itemdata.countdown)
 const gettime = () => {
-  timeID.value = setInterval(() => {
+  timeID.value = setTimeout(() => {
     minutes.value = parseInt((props.itemdata.countdown - count) / 60)
     console.log(minutes.value)
     count++

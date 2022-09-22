@@ -9,9 +9,9 @@
 </template>
 
 <script setup>
-import content from "./four.vue"
-import top from "./three.vue"
-import bottom from "./two.vue"
+import content from "./content.vue"
+import top from "./top.vue"
+import bottom from "./bottom.vue"
 
 const props = defineProps({
   order: {
