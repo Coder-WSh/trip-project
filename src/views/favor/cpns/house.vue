@@ -12,11 +12,16 @@
           <div class="right">
             <span class="pic">
               <img :src="value.logoUrl" alt="" />
-              <van-icon name="like" color="red" size="45" class="pad" />
+              <van-icon name="like" color="red" size="8vw" class="pad" />
 
               <div class="comment">
-                <van-icon name="comment-o" color="#fff" size="45" class="pad" />
-                <h4>{{ value.commentBriefForCD.totalCount }}</h4>
+                <van-icon
+                  name="comment-o"
+                  color="#fff"
+                  size="8vw"
+                  class="pad"
+                />
+                <div>{{ value.commentBriefForCD.totalCount }}</div>
               </div>
             </span>
           </div>
@@ -25,7 +30,10 @@
         <div class="bottom">
           <div class="one">
             <span class="a">{{ value.address }}</span>
-            <template v-for="(item, indey) in value.unitSummeries.slice(0, 2)">
+            <template
+              v-for="(item, indey) in value.unitSummeries.slice(0, 2)"
+              :key="indey"
+            >
               <span>{{ item.text }}</span>
             </template>
           </div>
@@ -95,6 +103,7 @@ favorStore.getInfosHistory()
           flex-direction: column;
           // justify-content: center;
           align-items: center;
+          justify-content: center;
           text-align: center;
 
           position: absolute;
@@ -104,8 +113,11 @@ favorStore.getInfosHistory()
             width: 30px;
             height: 30px;
             border-radius: 50%;
-            padding-bottom: 10px;
+            margin-bottom: 10px;
           }
+          // .van-icon-like:before {
+          //   width: 20px;
+          // }
           .comment {
             color: #fff;
           }

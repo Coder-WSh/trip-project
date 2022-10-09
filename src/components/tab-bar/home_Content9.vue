@@ -7,7 +7,9 @@
         <div class="text pad">{{ data.summaryText }}</div>
         <span class="two">{{ data.houseName }}</span>
         <div class="three">
-          <van-rate v-model="value" readonly allow-half />
+          <div class="span1">
+            <van-rate v-model="value" readonly allow-half />
+          </div>
           <span v-r>{{ data.finalPrice }}</span>
         </div>
         <!-- 
@@ -71,11 +73,14 @@ const value = Number(props.data.commentScore)
 
       .three {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-around;
         align-items: center;
         color: #fff;
+        .span1 {
+          width: 122px;
+        }
         span {
-          padding-left: 10px;
+          flex: 1;
         }
       }
 

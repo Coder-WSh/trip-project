@@ -63,8 +63,7 @@ const detailStore = useDetailStore()
 detailStore.gethomedetail(houseId)
 const { detail } = storeToRefs(detailStore)
 const mainPart = computed(() => detail.value.mainPart)
-// 下面可以封装一下 轮播图有问题要改
-// 获取整个页面，然后控制顶部导航栏的实现
+
 const detailRef = ref()
 const { top } = scroolHeight(detailRef)
 const isShow = computed(() => {
@@ -144,7 +143,7 @@ watch(top, (newValue) => {
       break
     }
   }
-  // 有个小bug 最后个周边 active要点两次
+
   // 修改子组件的
 
   topBar.value.count = index

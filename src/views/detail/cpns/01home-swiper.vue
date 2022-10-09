@@ -23,7 +23,6 @@
           </template>
         </div>
       </template>
-      
     </van-swipe>
   </div>
 </template>
@@ -52,7 +51,8 @@ const getActive = (item) => {
 }
 
 const replaceStr = (value) => {
-  return value.replace(": ", "").replace("【", "").replace("】", "")
+  let a = value.replace("【", "").replace("】", "").replace("：", "")
+  return a
 }
 </script>
 

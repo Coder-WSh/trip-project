@@ -16,10 +16,10 @@
     <div class="first" v-show="isShow">
       <van-tabs v-model:active="twoActive">
         <van-tab title="房屋">
-          <One />
+          <house />
         </van-tab>
         <van-tab title="房东">
-          <Two />
+          <lander />
         </van-tab>
       </van-tabs>
     </div>
@@ -32,8 +32,8 @@
 
 <script setup>
 import { ref, watch } from "vue"
-import One from "./cpns/house.vue"
-import Two from "./cpns/lander.vue"
+import house from "./cpns/house.vue"
+import lander from "./cpns/lander.vue"
 import History from "./cpns/history.vue"
 
 const titers = ["我的收藏", "游览历史"]
