@@ -1,6 +1,6 @@
 <template>
   <div class="home" ref="homeRef">
-    <h2>宏远旅途</h2>
+    <h2>休闲旅途</h2>
     <img src="../../assets/img/home/banner.webp" alt="" />
     <home_location />
     <!-- 时间段 -->
