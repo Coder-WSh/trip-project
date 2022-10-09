@@ -32,7 +32,7 @@
 
     <div class="flex">
       <span class="text2">{{ info.nearByPosition?.address }}</span>
-      <span>
+      <span class="text1">
         地图·周边
         <van-icon name="arrow" />
       </span>
@@ -62,7 +62,7 @@ const { info } = storeToRefs(detailStore)
     background-color: #f5f7fa;
     align-items: center;
     .text1 {
-      font-size: 18px;
+      width: 20vw;
     }
     .text2 {
       font-size: 14px;
