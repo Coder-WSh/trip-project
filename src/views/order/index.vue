@@ -33,8 +33,6 @@ const { orderInfos } = storeToRefs(orderStore)
 watch(activeName, (newvalue) => {
   orderStore.getOrder(setInfos[newvalue])
 })
-
-onMounted({})
 </script>
 
 <style lang="less" scoped>

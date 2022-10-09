@@ -34,18 +34,17 @@ let count = 1
 const gettime = () => {
   timeID.value = setTimeout(() => {
     minutes.value = parseInt((props.itemdata.countdown - count) / 60)
-    console.log(minutes.value)
+
     count++
     if (minutes.value <= 0) {
       clearInterval(timeID.value)
       return
     }
   }, 1000)
-
-  onMounted(() => {
-    gettime()
-  })
 }
+onMounted(() => {
+  gettime()
+})
 </script>
 
 <style lang="less" scoped>
@@ -58,7 +57,7 @@ const gettime = () => {
     .end {
       display: flex;
       justify-content: flex-end;
-      width: 130px;
+      width: 140px;
       span {
         padding: 5px;
       }
