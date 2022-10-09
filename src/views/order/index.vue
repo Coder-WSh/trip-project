@@ -2,7 +2,7 @@
   <div class="order">
     <van-nav-bar title="订单列表" left-text="返回" left-arrow>
       <template #right>
-        <van-icon name="orders-o" size="30" />
+        <van-icon name="orders-o" size="4vh" />
       </template>
     </van-nav-bar>
 

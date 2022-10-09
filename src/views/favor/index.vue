@@ -9,7 +9,7 @@
         </van-tabs>
       </template>
       <template #right>
-        <van-icon name="orders-o" size="30" />
+        <van-icon name="orders-o" size="4vh" />
       </template>
     </van-nav-bar>
 
