@@ -17,7 +17,7 @@
         <div class="two text2">
           <div class="pad first" v-r>{{ data.finalPrice }}</div>
           <div class="pad next" v-r>{{ data.productPrice }}</div>
-          <div class="pad end" v-r>{{ data?.priceTipBadge?.text }}</div>
+          <div class="pad end">{{ data?.priceTipBadge?.text }}</div>
         </div>
       </div>
     </div>
@@ -70,9 +70,8 @@ defineProps({
       .two {
         display: flex;
         align-items: center;
-        .pad {
-          padding-right: 15px;
-        }
+        justify-content: space-between;
+
         .first {
           color: var(--primary-color);
         }
@@ -80,7 +79,7 @@ defineProps({
           text-decoration: line-through;
         }
         .end {
-          padding: 3px;
+          // padding: 3px;
           background-image: linear-gradient(270deg, #f66, #ff9f9f);
           border-radius: 25px;
         }
