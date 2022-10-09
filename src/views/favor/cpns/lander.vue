@@ -1,13 +1,7 @@
 <template>
-<div class="home">
-  没数据
-</div>
+  <div>暂无房东消息，请立即添加</div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="less" scoped>
-
-</style>
+<style lang="less" scoped></style>
