@@ -18,7 +18,7 @@
 
 <script setup>
 import { storeToRefs } from "pinia"
-import { watch, onMounted, ref } from "vue"
+import { watch, ref } from "vue"
 import useOrederStore from "../../stores/moudle/order"
 import One from "./cpns/index.vue"
 
