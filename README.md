@@ -1,6 +1,6 @@
 # one
 
-This template should help get you started developing with Vue 3 in Vite.
+这是一个用vite搭建的官网页面，使用了vant组件，亮点，无限刷新页面内容和自己搭建的导航栏组件.
 
 ## Recommended IDE Setup
 
